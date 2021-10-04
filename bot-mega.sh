@@ -2,6 +2,11 @@
 
 # Sync with configs
 source bot-mega.conf
+ccache -M 200G
+export USE_CCACHE=1
+export PEX_BUILD_TYPE=OFFICIAL
+export PEX_MAINTAINER=AlwaysAngry
+export SELINUX_IGNORE_NEVERALLOWS=true
 source build/envsetup.sh
 make installclean
 
