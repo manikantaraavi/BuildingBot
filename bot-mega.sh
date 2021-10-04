@@ -3,6 +3,7 @@
 # Sync with configs
 source bot-mega.conf
 source build/envsetup.sh
+make installclean
 
 sendMessage() {
 MESSAGE=$1
